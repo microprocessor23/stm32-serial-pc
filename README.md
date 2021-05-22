@@ -23,16 +23,16 @@ sudo apt-get install ros-melodic-serial
 3.communication protocol
 ![image](https://user-images.githubusercontent.com/30153639/119234062-6de55c80-bb5e-11eb-8723-11e260e9fdf8.png)
 
-start: 2 bytes, always be 'A','T'.
+start: 2 bytes, always be 'A'(0x41),'T'(0x54).
 
-tar-ID: always be 'A'. 
+tar-ID: always be 'A'(0x41). 
 
-src-ID: source node id, such as '1'.
+src-ID: source node id, such as '1'(0x31).
 
-msg-ID: message id, 0 or 1. 
-0 represents the angular velocity frame, 1 represents the attitude frame. 
+msg-ID: message id, '0'(0x30) or '1'(0x31). 
+'0' represents the angular velocity frame, '1' represents the attitude frame. 
 
-data-length: always be 20.
+data-length: always be '2'(0x32),'0'(0x30).
 
 data-section: The length of this section is 20 bytes indicated by data-length. As every four bytes represent a float number, the data segment can express 5 float type numbers.  
 For angular velocity frame, the first three float numbers are roll, pitch, and yaw in sequence. The remaining bytes should be set to 0. 
@@ -40,7 +40,7 @@ For attitude frame, the first 4 float number are w, x, y, z in sequence. The rem
 
 Checksum byte: The lower byte of the sum of all bytes, including Checksum byte itself, is 0.
 
-end: always be  '！'.
+end: always be  '!'(0x21).
 
 5.Data visualization tools
 
