@@ -38,7 +38,7 @@ parity bit：The check byte and the last eight bits of all the previous bytes ar
 
 end：set ‘！’ as the end of a package.
 
-5. Data visualization tools
+5.Data visualization tools
 
 5.1 rqt_bag:http://wiki.ros.org/rqt_bag
 
