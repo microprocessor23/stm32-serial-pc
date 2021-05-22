@@ -21,7 +21,7 @@ sudo apt-get install ros-melodic-serial
 2.3 record data: rosbag record -a
 
 3.communication protocol
-![image](https://user-images.githubusercontent.com/30153639/119234030-42fb0880-bb5e-11eb-9388-89a05633a16b.png)
+![image](https://user-images.githubusercontent.com/30153639/119234062-6de55c80-bb5e-11eb-8723-11e260e9fdf8.png)
 
 start: 2 bytes, always be 'A','T'.
 
