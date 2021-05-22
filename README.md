@@ -32,7 +32,7 @@ data-length：在这个协议中，数据段长度都是20个字节
 
 data-section：每四个字节表示一个浮点数，故而数据段能表达5个浮点数，每个浮点数的意义，参考msg-ID的描述。
 
-校验：校验字节与之前所有字节的末八位相加为0
+parity bit：校验字节与之前所有字节的末八位相加为0
 
 end：set ‘！’ as the end of a package
 
