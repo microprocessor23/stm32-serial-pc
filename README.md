@@ -29,8 +29,8 @@ tar-ID: always be 'A'(0x41).
 
 src-ID: source node id, such as '1'(0x31).
 
-msg-ID: message id, '0'(0x30) or '1'(0x31). 
-'0' represents the angular velocity frame, '1' represents the attitude frame. 
+msg-ID: message id, '00'(0x30, 0x30) or '01'(0x30, 0x31). 
+'00' represents the angular velocity frame, '01' represents the attitude frame. 
 
 data-length: always be '2'(0x32),'0'(0x30).
 
